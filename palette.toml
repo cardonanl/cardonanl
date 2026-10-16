@@ -1,0 +1,55 @@
+# Single source of color for every SVG. Values come from nicolascardona.com
+# (98.css chrome: teal desktop, #c0c0c0 face, navy title gradient).
+# Edit here, then run `python build.py`.
+
+[light]
+desktop       = "#008080"   # banner background (site desktop)
+banner_fg     = "#ffffff"   # banner letters, like the site's icon labels
+banner_shadow = "#000000"
+face          = "#c0c0c0"   # window body
+light         = "#dfdfdf"   # bevel, outer top-left
+hilite        = "#ffffff"   # bevel, inner top-left
+shadow        = "#808080"   # bevel, inner bottom-right
+dkshadow      = "#0a0a0a"   # bevel, outer bottom-right
+title_a       = "#000080"   # title bar gradient start
+title_b       = "#1084d0"   # title bar gradient end
+title_text    = "#ffffff"
+glyph         = "#000000"   # text and glyphs drawn on the face color
+content_bg    = "#ffffff"   # sunken content panel
+text          = "#000000"
+muted         = "#444444"
+accent        = "#000080"
+rule          = "#c0c0c0"
+
+[dark]
+desktop       = "#004a4a"
+banner_fg     = "#e8e8e8"
+banner_shadow = "#000000"
+face          = "#3a3a3a"
+light         = "#4a4a4a"
+hilite        = "#5e5e5e"
+shadow        = "#1f1f1f"
+dkshadow      = "#000000"
+title_a       = "#000080"
+title_b       = "#1084d0"
+title_text    = "#ffffff"
+glyph         = "#d4d4d4"
+content_bg    = "#1e1e1e"
+text          = "#d4d4d4"
+muted         = "#9a9a9a"
+accent        = "#5fa8ff"   # navy fails contrast on #1e1e1e, so it is lifted here
+rule          = "#3a3a3a"
+
+# The terminal is dark in both themes, like the <pre> blocks on the site.
+[terminal]
+bg     = "#1e1e1e"
+fg     = "#d4d4d4"
+key    = "#00a8a8"
+path   = "#5fa8ff"
+muted  = "#808080"
+cursor = "#d4d4d4"
+# Standard 16-color VGA / Windows palette, shown as the neofetch color rows.
+ansi = [
+  "#000000", "#800000", "#008000", "#808000", "#000080", "#800080", "#008080", "#c0c0c0",
+  "#808080", "#ff0000", "#00ff00", "#ffff00", "#0000ff", "#ff00ff", "#00ffff", "#ffffff",
+]

@@ -1,0 +1,43 @@
+name: Build profile
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # daily, 06:00 in Cali (UTC-5)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [build.py, content.toml, palette.toml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build SVGs and README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # enables pinned repos via GraphQL
+        run: python build.py
+
+      - name: Commit if anything changed
+        run: |
+          git add assets README.md
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh profile assets"
+          git push

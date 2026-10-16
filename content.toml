@@ -1,0 +1,135 @@
+# Single source of text for the README and every SVG.
+# Edit here, then run `python build.py`.
+
+[profile]
+name     = "Nicolás Cardona"
+banner   = "NICOLAS CARDONA"        # A-Z and spaces only (drawn from a bitmap font)
+github   = "cardonanl"
+user     = "nicolas"
+host     = "cali"
+role     = "Data scientist & analyst"
+location = "Cali, Colombia"
+tagline  = "data scientist · ML / NLP / data pipelines · Cali, CO"
+website  = "www.nicolascardona.com"
+
+[[links]]
+label = "nicolascardona.com"
+url   = "https://nicolascardona.com"
+icon  = "web"        # links with an icon also get a desktop icon at the end of the README
+
+[[links]]
+label = "LinkedIn"
+url   = "https://www.linkedin.com/in/nicol%C3%A1s-cardona-londo%C3%B1o-2a1321149/"
+icon  = "linkedin"
+
+[[links]]
+label = "X"
+url   = "https://x.com/cardonanl"
+
+[[links]]
+label = "Substack"
+url   = "https://substack.com/@cardonanl"
+
+# ---------------------------------------------------------------- terminal
+[terminal]
+title = "nicolas@cali: ~ - Terminal"
+logo = '''
+   _.-----._
+ .-         -.
+ |-._     _.-|
+ |   `---'   |
+ |-._     _.-|
+ |   `---'   |
+ `-._     _.-'
+     `---'
+'''
+# {repos}, {pinned}, {last_push} and {last_msg} are filled from the GitHub API.
+# Any of them can be used in a row; rows without placeholders are static.
+rows = [
+  ["Role",      "Data scientist & analyst"],
+  ["Host",      "Cali, Colombia"],
+  ["Focus",     "ML · NLP · data pipelines"],
+  ["Uptime",    "7+ years in data"],
+  ["Pinned",    "{pinned}"],
+  ["Last push", "{last_push}"],
+]
+
+# ------------------------------------------------------------------- about
+[about]
+title = 'C:\Users\Nicolas\about.txt - Notepad'
+paragraphs = [
+  "Product Lead at MrBeast | ViewStats, where I'm designing, building and leading B2B tools that help brands and companies make data-driven decisions using YouTube insights.",
+  "With 7+ years of experience and a background in political science, applied statistics and data science, I combine analytical thinking and storytelling to turn complex data into actionable products that deliver real value.",
+]
+focus = [
+  "Machine learning: models, evaluation, production",
+  "NLP: text classification and extraction",
+  "Data pipelines: ingestion, transforms, warehousing",
+]
+
+# ------------------------------------------------------------------- stack
+[stack]
+title = 'C:\Dev\stack - tree'
+root  = "stack/"
+
+[[stack.groups]]
+name = "languages"
+items = [
+  { name = "Python", note = "models, NLP, pipelines, scraping" },
+  { name = "R",      note = "statistics and analysis" },
+]
+
+[[stack.groups]]
+name = "analytics"
+items = [
+  { name = "ClickHouse", note = "fast analytics over event data" },
+  { name = "BigQuery",   note = "warehouse SQL and reporting" },
+]
+
+[[stack.groups]]
+name = "databases"
+items = [
+  { name = "Spanner", note = "relational data at scale" },
+  { name = "MongoDB", note = "documents for apps and pipelines" },
+]
+
+[[stack.groups]]
+name = "dashboards"
+items = [
+  { name = "Looker Studio", note = "shareable reports" },
+  { name = "Power BI",      note = "business dashboards" },
+]
+
+# ---------------------------------------------------------------- projects
+[projects]
+title = 'C:\Dev\Projects'
+
+[[projects.items]]
+name = "Cali Monitor"
+kind = "Dashboard"
+about = "Real-time security and urban indicators"
+url = "https://calimonitor.nicolascardona.com/"
+
+[[projects.items]]
+name = "Colombian Elections 2023"
+kind = "Python"
+about = "Scraping and analysis of local election results"
+url = "https://github.com/cardonanl/EleccionesLocalesColombia2023"
+
+[[projects.items]]
+name = "National Budget 2027"
+kind = "Data viz"
+about = "Colombia's budget as a fiscal receipt"
+url = "https://presupuesto2027.nicolascardona.com/"
+
+[[projects.items]]
+name = "Google Maps scraping"
+kind = "Python"
+about = "Places API data mapped with GeoPandas"
+url = "https://nicolascardona.com/single-post/mapeando-las-salchipaperias-en-cali-scrapping-aplicado"
+
+[[projects.items]]
+name = "Car import simulator"
+kind = "Simulator"
+about = "Tariffs and taxes for importing a car in 2026"
+url = "https://nicolascardona.com/importarcarro/"
