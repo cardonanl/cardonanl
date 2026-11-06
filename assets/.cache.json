@@ -1,7 +1,7 @@
 {
-  "last_date": "2026-10-15",
-  "last_msg": "Boton de modo dark/light",
-  "last_repo": "nicolascardona-web",
+  "last_date": "2026-10-12",
+  "last_msg": "security: remove injected malware from postcss.config.mjs",
+  "last_repo": "ImpostorPropio",
   "pinned": [
     "cali-monitor",
     "EleccionesLocalesColombia2023",
