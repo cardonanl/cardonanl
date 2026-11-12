@@ -1,7 +1,7 @@
 {
-  "last_date": "2026-10-12",
-  "last_msg": "security: remove injected malware from postcss.config.mjs",
-  "last_repo": "ImpostorPropio",
+  "last_date": "2026-11-12",
+  "last_msg": "security: elimina código malicioso inyectado en vite.config.js",
+  "last_repo": "nicolascardona-web",
   "pinned": [
     "cali-monitor",
     "EleccionesLocalesColombia2023",
